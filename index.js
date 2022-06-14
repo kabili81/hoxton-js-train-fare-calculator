@@ -11,6 +11,14 @@ let travelling = prompt('How far you are travelling?')
 console.log(travelling)
 
 let pricePerTravelledKm = 0.21 
-console.log(pricePerTravelledKm * travelling)
+//console.log(pricePerTravelledKm * travelling)
+
 let juniorPassengersUnder18 = 0.2
 let seniorPassengerOver65 = 0.4
+if (age < 18) {
+    console.log((travelling * pricePerTravelledKm) * (0.21/1.2))
+  } else if (age > 65) {
+    console.log((travelling * pricePerTravelledKm) * (0.21/1.4))
+  } else {
+    console.log(travelling * pricePerTravelledKm)
+  }
